@@ -1,46 +1,45 @@
-![GA Logo](https://raw.github.com/generalassembly/ga-ruby-on-rails-for-devs/master/images/ga.png)
+# GA WDI Instructor Challenge
 
-## WDI Instructor Code Challenge
+## Comments/Observations
 
-### GOAL 
+A couple things I noticed while completing this:
 
-> Create a single page application that will utilize an external API to request movie data. The client side application will be served by a back-end which will have the ability to persist data.
+### Vanilla JavaScript is not the best intro to AJAX/frontend!
 
-#### Back-end Instructions
+I would likely have a lesson where I teach JavaScript syntax/fundamentals,
+before doing an AJAX lesson... and I would probably do the AJAX lesson using
+jQuery.
 
-- Within this repo you will have noticed two folders entitled `node-backend-starter-code` and `ruby-backend-starter-code`. Each of these contains similar back-ends written in frameworks respective to their languages - Sinatra for Ruby and Express for Node.
+JQuery adds a nice layer of abstraction that would reduce the cognitive load on
+students who likely don't have too much experience doing frontend programming.
 
-- Please **choose one** of the back-ends before you proceed. Feel free to pick whichever language you feel more comfortable in.
+### Templating engine
 
-- Both back-ends contain several errors that commonly made by students, so you will need to do some debugging to ensure they are working correctly.
+I would have used a templating engine like Pug to render the `/favorites` page. 
+### CSS
 
-#### Front-end Instructions
+I did not use CSS in this project since I ran out of time. But also, students
+should be saving CSS to be the last thing that they touch. I would have students
+use Bootstrap.
 
-- Use Vanilla Javascript to complete.
+### Teaching React
 
-- The page should have a form that uses the [OMDBapi](http://www.omdbapi.com/) to search for matching movies and then display the results.
- - *Example*: If a user searches for `Star Wars`, a list of every Star Wars movie will be displayed.
+Writing an asynchronous website is painful without an MVC library. I would teach
+React, since there's a decently large job market for React developers.
 
-- When the user clicks on a search result display detailed information about that movie.
-  - *Example*: If a user is viewing a list of every Star Wars movie and clicks on `Star Wars: A New Hope`, detailed information about that specific movie will be displayed.
+The problem is that understanding React requires students to already have a
+robust mental model of computing and a good understanding of JavaScript's quirks
+(functions, lexical `this`, objects, etc.)... Which, hopefully they would have
+by the time they get to the frontend section of the course!
 
-- Users should be able to "favorite" a movie and have it persisted via the provided back-end.
+The good thing is that writing this in React (and thus, teaching it) would be
+much easier than teaching students how to do it in vanilla JavaScript. I think a
+good, natural progression would be
 
-- Provide a link to display favorited movies.
+- JavaScript syntax (solving problems students
+have already encourntered, but in JavaScript. They'll realize that programming
+languages are pretty similar and algorithms are language-agnostic)
+- AJAX w/ jQuery
+- React (or another MVC)
 
-#### Things we are looking for
 
-- Clear, simple code
-- Explanatory comments for beginners
-- Consistent Naming Conventions
-- Valid HTML, CSS, and JavaScript
-
-#### Deliverables
-
-- Please send us back a link to a git repo with the completed code challenge. 
-
-- Include a README.md file in your repo with a link to your application deployed on Heroku or Digital Ocean.
-
-#### Bonus
-
-- Rewrite the application using a JavaScript MVC library. Include a readme that explains the benefits and any additional challenges students would face learning the library

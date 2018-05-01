@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <title>Favorite Movies</title>
+</head>
+<body>
+  <a href="/favorites.html">View favorites</a>
+
+  <h2>Search for a movie</h2>
+  <form id="searchForm">
+    <label for="title">Search by title:</label>
+    <input type="text" name="title" />
+    <input type="submit" />
+  </form>
+
+  <h2>Details</h2>
+  <div id="details-container">
+  </div>
+
+  <div id="results-container">
+    <h2>Results</h2>
+    <p>Click a result to see its details.</p>
+    <ul id="results"></ul>
+  </div>
+  
+  <script src="/js/util.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
